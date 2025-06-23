@@ -1,0 +1,74 @@
+/* Rainbow gradient animated navbar with glowing effects */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  background: linear-gradient(270deg, #ff416c, #ff4b2b, #f9d423, #00b4db, #45aaf2, #6a11cb);
+  background-size: 1200% 1200%;
+  animation: rainbow 10s ease infinite;
+  color: white;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  flex-wrap: wrap;
+}
+
+@keyframes rainbow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #ffd700, 0 0 30px #00bfff;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #00bfff;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff69b4;
+  }
+}
+
+.nav-links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-links a:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+}
+
+.nav-links .active {
+  background: rgba(255, 255, 255, 0.5);
+  color: #222;
+  font-weight: bold;
+  border: 2px solid white;
+}

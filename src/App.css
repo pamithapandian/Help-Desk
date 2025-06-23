@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
-}
+/* App.css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('/public/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  color: #333;
+}
+
+nav {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  max-width: 500px;
+  margin: 40px auto;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+}
+
+form input,
+form textarea {
+  width: 100%;
+  margin: 12px 0;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+button {
+  background: linear-gradient(to right, #00b09b, #96c93d);
   color: white;
+  padding: 12px 24px;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background: linear-gradient(to right, #009688, #8bc34a);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 24px;
+  font-size: 28px;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.issue-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-left: 6px solid #007bff;
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 4px 20px rgba(0, 123, 255, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.issue-card:hover {
+  transform: translateY(-4px);
+}
+
+.issue-card h3 {
+  color: #007bff;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.issue-card p {
+  color: #444;
+  font-size: 16px;
+}
+
+.issue-card small {
+  color: #888;
+  display: block;
+  margin-top: 10px;
+}
+
+.log-entry {
+  font-family: 'Courier New', monospace;
+  background: #fff8e1;
+  border-left: 4px solid #ff9800;
+  padding: 14px;
+  margin: 14px auto;
+  max-width: 600px;
+  color: #5d4037;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(255, 152, 0, 0.1);
 }
