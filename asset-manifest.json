@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Help-Desk/static/css/main.ff2a501f.css",
+    "main.js": "/Help-Desk/static/js/main.98eb3f3b.js",
+    "static/js/453.73536db2.chunk.js": "/Help-Desk/static/js/453.73536db2.chunk.js",
+    "static/media/bg.jpg": "/Help-Desk/static/media/bg.98c228bead29dbb6ac54.jpg",
+    "index.html": "/Help-Desk/index.html",
+    "main.ff2a501f.css.map": "/Help-Desk/static/css/main.ff2a501f.css.map",
+    "main.98eb3f3b.js.map": "/Help-Desk/static/js/main.98eb3f3b.js.map",
+    "453.73536db2.chunk.js.map": "/Help-Desk/static/js/453.73536db2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff2a501f.css",
+    "static/js/main.98eb3f3b.js"
+  ]
+}
