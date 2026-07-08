@@ -13,7 +13,7 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <div style={{ padding: '20px' }}>
+      <div style={{ padding: '30px' }}>
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route 
